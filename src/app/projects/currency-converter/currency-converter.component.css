@@ -1,0 +1,86 @@
+/* src/app/currency-converter/currency-converter.component.css */
+
+.converter-container {
+  font-family: Arial, sans-serif;
+  width: 350px; /* Set a fixed width for the converter box */
+  margin: 50px auto; /* Center the box on the page */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 15px; /* Space between elements */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for each input/select group */
+div {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 10px; /* Space between groups */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="number"],
+select {
+  width: 100%; /* Take full width of the container */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-size: 1em;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  align-self: center; /* Center the button if using flexbox on parent */
+  width: auto; /* Allow button to size based on content */
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #28a745; /* Green border for results */
+  border-radius: 5px;
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.result h3 {
+  margin: 0; /* Remove default margin from h3 inside result */
+}
